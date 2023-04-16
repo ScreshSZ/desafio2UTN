@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <meta name="author" content="Zeniquel Santiago">
+    <meta name="description" content="Desafio 2 Formulario">
+    <meta name="keywords" content="web, formulario, trabajo2, datos">
+    <title>Zeniquel Santiago</title>
+</head>
+
+<body>
+
+    <h1>Zeniquel Santiago</h1>
+
+    <h2>Datos</h2>
+    <form action="login.php" method="post" target="_blank">
+        <label for="documento">Documento: </label>
+        <select name="documento" id="documento" size="tamaño">
+            <option value="Dni">DNI</option>
+            <option value="Cedula">Cedula</option>
+            <option value="DU">Documento Unico</option>
+            <option value="LC">Libreta Civica</option>
+        </select>
+        <input type="text" name="documento" id="documento" size="tamaño" placeholder="Escribir aqui...">
+        <br>
+        <br>
+        <label for="genero"></label>
+        <input type="radio" name="genero" id="genero" value="Hombre"> Hombre
+        <input type="radio" name="genero" id="genero" value="Mujer"> Mujer
+        <br>
+        <br>
+        <label for="Apellido">Apellido:</label>
+        <input type="text" name="Apellido" id="Apellido" size="tamaño" placeholder="Apellido">
+        <label for="Apellido">Nombre:</label>
+        <input type="text" name="Nombre" id="Nombre" size="tamaño" placeholder="Nombre">
+        <br>
+        <br>
+        <label for="Fecha">Fecha de nacimiento: </label>
+        <input type="date" id="Fecha" name="Fecha" max="2023-12-31">
+        <br>
+        <br>
+        <label for="domicilio">Domicilio:</label>
+        <input type="text" id="domicilio" name="domicilio" placeholder="Escribe tu domicilio">
+        <label>Codigo Postal:</label>
+        <input type="text" id="domicilio" name="domicilio" placeholder="Escribe el codigo Postal">
+        <br>
+        <br>
+        <label for="Pais">Pais</label>
+        <select id="Pais" name="Pais">
+            <option value="Elige un pais">Elige un pais</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Argentina">Alemania</option>
+            <option value="Argentina">Francia</option>
+            <option value="Argentina">España</option>
+        </select>
+        <label for="Provincia">Capital</label>
+        <select id="Provincia" name="Provincia">
+            <option value="Elige una provincia">Elige una capital</option>
+            <option value="Corrientes">Berlin</option>
+            <option value="Corrientes">Buenos Aires</option>
+            <option value="Corrientes">Paris</option>
+            <option value="Corrientes">Madrid</option>
+        </select>
+        <br>
+        <br>
+        <label for="Correo">Correo Electronico</label>
+        <input type="text" id="Correo" name="Correo" size="tamaño" required placeholder="Escribe tu correo electronico">
+        <br>
+        <br>
+        <label for="telefono">Numero de Telefono</label>
+        <input type="text" id="telefono" name="telefono" size="tamaño" placeholder="Numero de telefono">
+        <br>
+        <br>
+        <label for="presentacion">Observaciones</label>
+        <br>
+        <textarea type="file" id="presentacion" size="tamaño" name="presentacion" placeholder="Escribe aqui..."
+        ></textarea>
+        <br>
+        <input type="reset" value="Resetear">
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
